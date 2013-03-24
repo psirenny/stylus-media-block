@@ -1,0 +1,12 @@
+display(value, type = noclip, width = 10000px)
+  if (mode == media-block)
+    if (type == clip)
+      display block
+      overflow hidden
+    else if (type == no-clip)
+      display table-cell
+      width width
+    else
+      error('unsupported media-block type "%s"' % type)
+  else
+    display mode
