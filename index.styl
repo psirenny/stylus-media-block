@@ -1,12 +1,13 @@
 display(value, type = noclip, width = 10000px)
-  if (value == media-block)
-    if (type == clip)
-      display block
-      overflow hidden
-    else if (type == noclip)
-      display table-cell
-      width width
-    else
-      error('' + 'unsupported media-block type "%s"' % type)
-  else
+  unless value == media-block
     display value
+    return
+
+  if type == clip
+    display block
+    overflow hidden
+  else if type == noclip
+    display table-cell
+    width width
+  else
+    error('' + 'unrecognized media-block type "%s"' % type)
