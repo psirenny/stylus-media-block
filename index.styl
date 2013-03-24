@@ -1,12 +1,12 @@
 display(value, type = noclip, width = 10000px)
-  unless value == media-block
+  unless (value == media-block)
     display value
     return
 
-  if type == clip
+  if (type == clip)
     display block
     overflow hidden
-  else if type == noclip
+  else if (type == noclip)
     display table-cell
     width width
   else
