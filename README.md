@@ -1,4 +1,4 @@
-Stylus i18n
+Stylus Media Block
 =================
 
-Extends css properties to support internationalization.
+Extends display property to include a "media-block" render type.

@@ -1,5 +1,5 @@
 display(value, type = noclip, width = 10000px)
-  if (mode == media-block)
+  if (value == media-block)
     if (type == clip)
       display block
       overflow hidden
@@ -9,4 +9,4 @@ display(value, type = noclip, width = 10000px)
     else
       error('unsupported media-block type "%s"' % type)
   else
-    display mode
+    display value
