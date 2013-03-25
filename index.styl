@@ -1,9 +1,7 @@
 display(value, type = noclip, width = 10000px)
-  unless (value == media-block)
+  if (value != media-block)
     display value
-    return
-
-  if (type == clip)
+  else if (type == clip)
     display block
     overflow hidden
   else if (type == noclip)
